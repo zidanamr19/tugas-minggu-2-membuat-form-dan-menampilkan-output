@@ -1,0 +1,76 @@
+<!DOCTYPE html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width-device-width, initial-scale
+    = 1.0"
+    <title> Menu </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <nav>
+            <ul>
+                <li><button type="button"
+                class="buttoninput"
+                id="input"><b>input</b>
+                </button></li>
+                <li><button type="button"
+                class="buttonoutput"
+                id="output"><b>Output</b>
+                </button></li>
+            </ul>
+        </nav>
+        <div class="input">
+            <h2>Masukkan Data Diri Anda 
+            Disini</h2>
+            <p>Nama</p>
+            <input type="text"
+            class="inputbox" id="Nama Lengkap"
+            placeholder="Nama Lengkap">
+            <p></p>
+
+        <div class = "input_field">
+            <label for = "jenis_kelamin">Jenis Kelamin</label><br>
+            <input type="radio" id = "lk" name="jenis_kelamin" value="lk">
+            <label for = "lk">Laki-Laki</label>
+            <input type="radio" id="pr" name="jenis_kelamin" value="pr">
+            <label for="pr">Perempuan</label>
+        </div><p></p>
+        <div class="costum_select">
+            <div>
+                <label for="pekerjaan">Pekerjaan :</label>
+                <select name="pekerjaan" id="pekerjaan">
+                    <option value="oke"></option>
+                    <option value="mh">Pelajar</option>
+                    <option value="ptn">Petani</option>
+                    <option value="gr">Guru</option>
+                    <option value="wrswst">Wiraswasta</option>
+                </select>
+            </div>
+        </div><p></p>
+        <div>   
+            <label for="alamat">Alamat:</label>
+            <textarea id="alamat" name="alamat" rows="6" cols="36">
+            </textarea>
+        </div>
+            <p>Email Aktif</p>
+            <input type="email"
+            class="inputbox" id="email"
+            placeholder="Email">
+            <br><br>
+            <button onclick="submitbutton()"><b>Submit</b></button>
+        </div>
+        <div class="output">
+            <h2>Hasil Formulir Anda</h2>
+            <p><b>Nama Anda :</b></p>
+            <p id="hasilnama"> - </p> 
+            <p><b>Jenis Kelamin</b></p>
+            <p id="hasilnama"> - </p> 
+            <p><b>Pekerjaan</b></p>
+            <p id="pekerjaan"> - </p>
+            <p><b>Email Anda :</b></p>
+            <p id="hasilemail"> - </p>  
+        </div>
+    </div>
+</body>
